@@ -23,8 +23,8 @@ jobs:
 
     - name: Lint Code Base
       uses: github/super-linter@v4
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        VALIDATE_ALL_CODEBASE: false
-        IGNORE_GENERATED_FILES: true
-          IGNORE_GITIGNORED_FILES: true
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    VALIDATE_ALL_CODEBASE: false
+    IGNORE_GENERATED_FILES: true
+    IGNORE_GITIGNORED_FILES: true
